@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello2</title>
+    <style>
+        body{
+            background-color: palevioletred;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10%;
+        }
+        .main{
+        
+            border: 1px black solid;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    height: 400PX;
+    width: 750px;
+    text-align: center;
+    font-size:18px;
+    box-shadow: 0 0 10px rgb(106, 111, 112);
+        }
+        h1{
+            text-shadow: 0 0 5px rgb(18, 89, 107);
+         text-align: center;
+        }
+        #P{
+  font-weight: bold;
+            color: rgba(230, 69, 69, 0.911);
+            font-size: 18px;
+            font-family: "Segoe Script";
+        }
+        #hlo{
+ font-size: 25px;
+ font-weight: bold;
+font-family: "Lucida Handwriting";
+text-shadow: 0 0 5px rgb(230, 130, 73);
+        }
+        #myAudio{
+ color: #c29e5b;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+ <div class="h1">
+  <h1>HAPPY BIRTHDAY DEAR😘</h1>
+  
+ </div>
+ <div id="hlo">ANSHU! 🎉✨
+    <br></div>
+    <br>
+ <div id="P">
+         You are such a wonderful friend—kind, strong, and full of light! May your day be filled with love, laughter, and all the happiness you bring to others. Wishing you success, joy, and endless blessings in the year ahead. Enjoy your special day! 🎂🎁💖"</P>
+ 
+        </div>
+        <audio id="myAudio"  Autoplay, loop >
+            <source src="HBD.mp3" type="audio/mp3"> 
+        </audio><BR>
+            <BR>
+        <a href="about2.html" targeCt="_parent"> ABOUT YOU!</a>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let audio = document.getElementById("myAudio");
+            audio.play().catch(error => {
+                console.log("Autoplay Blocked! User interaction needed.");
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
